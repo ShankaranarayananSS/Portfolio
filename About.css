@@ -1,0 +1,71 @@
+/* Parent Div */
+#A_Main{
+    padding: 50px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+/* Bottom Div */
+#A_Bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Left and Right Divs */
+#A_L, #A_R{
+    flex: 1;
+    padding: 10px;
+    border: rgba(0, 0, 0, 1) solid 2px;
+    border-radius: 20px;
+    background-color: rgba(32, 32, 255, 0.75);
+}
+
+/* Left Div */
+#A_L{
+    margin-right: 10px;
+    animation: slideL 2s ease both;
+}
+
+/* Left Div Animation */
+@keyframes slideL {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    } to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Right Div */
+#A_R{
+    margin-left: 10px;
+    animation: slideR 2s ease both;
+}
+
+/* Right Div Animation */
+@keyframes slideR {
+    from {
+        transform: translateX(50%);
+        opacity: 0;
+    } to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Text - About */
+#A_T1{
+    padding: 0px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+/* Text - Common */
+#A_T2{
+    margin-top: 0px;
+    padding: 0px;
+    font-size: 20px;
+}

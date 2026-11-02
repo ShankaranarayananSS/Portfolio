@@ -1,0 +1,73 @@
+/* Common Background */
+body {
+    margin: 0;
+    padding: 0;
+    
+    overflow: hidden;
+    min-height: 100vh;
+    background-color: rgba(32, 192, 64, 0.48);
+}
+
+/* Common Link Tag */
+a {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    
+    color: rgba(0, 0, 0, 1);
+    transition: transform 0.25s ease;
+}
+
+/* Link Tag Hover Animation */
+a:hover {
+    color: rgba(255, 0, 0, 1);
+    transform: scale(1.25) rotateZ(-10deg);
+}
+
+/* Common Parent Div Tag */
+#C_Seperate {
+    overflow: hidden;
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+/* Common Menu Bar */
+#C_Topbar {
+    margin-left: 50%;
+    padding-right: 20px;
+    border-bottom-left-radius: 75px;
+    border: rgba(0, 0, 0, 1) solid 5px;
+    background-color: rgba(32, 32, 255, 0.75);
+    
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    animation: slideD 2s ease;
+}
+
+/* Slide Down Animation */
+@keyframes slideD {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Common Bottom */
+#C_Bottombar {
+    flex: 15;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

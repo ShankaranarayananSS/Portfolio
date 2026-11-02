@@ -1,0 +1,104 @@
+/* Parent Div */
+#H_Main {
+    padding: 50px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Text - Greeting */
+#H_T1 {
+    padding: 0px;
+    margin-bottom: 0px;
+    
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+/* Text - Name */
+#H_T2 {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    font-size: 60px;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    animation: randomcolors 5s infinite alternate;
+}
+
+/* Text - Colors */
+@keyframes randomcolors {
+    0% {
+        color: rgba(128, 0, 0, 1);
+    } 10% {
+        color: rgba(255, 0, 0, 1);
+    } 20% {
+        color: rgba(255, 128, 0, 1);
+    } 30% {
+        color: rgba(255, 255, 0, 1);
+    } 40% {
+        color: rgba(128, 255, 0, 1);
+    } 50% {
+        color: rgba(0, 255, 0, 1);
+    } 60% {
+        color: rgba(0, 255, 128, 1);
+    } 70% {
+        color: rgba(0, 255, 255, 1);
+    } 80% {
+        color: rgba(0, 128, 255, 1);
+    } 90% {
+        color: rgba(0, 0, 255, 1);
+    } 100% {
+        color: rgba(0, 0, 128, 1);
+    }
+}
+
+/* Text - About */
+#H_T3 {
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+/* Image */
+#H_Img {
+    width: 250px;
+    height: 250px;
+    
+    border-radius: 200px;
+    border: rgba(0, 0, 0, 1) solid 5px;
+}
+
+/* Div Left */
+.HL {
+    animation: slideL 2s ease both;
+}
+
+/* Left Div Animation */
+@keyframes slideL {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    } to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Div Right */
+.HR {
+    animation: slideR 2s ease both;
+}
+
+/* Right Div Animation */
+@keyframes slideR {
+    from {
+        transform: translateX(50%);
+        opacity: 0;
+    } to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
